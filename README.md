@@ -6,7 +6,7 @@ Ce dépôt regroupe mes réalisations majeures au sein du BUT
 - Sujet : Exploitation des résultats de 8 000 collèges au Diplôme National du Brevet sur près de 20 ans.
 - Compétence : Développer des applications informatiques simples.
 - Technologies : Implémentation de fonctions de recherche et de statistiques en Python.
-
+  
 
 
 # 2. Intelligence Artificielle - Splat IUT'O (SAE 1.02)
