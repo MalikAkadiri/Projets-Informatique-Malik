@@ -1,0 +1,183 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: fit-content;
+}
+
+h1,
+h2 {
+  padding-top: 15px;
+}
+
+main {
+  margin: 0 2dvw;
+}
+
+/* Float effect */
+.float {
+  margin: 1dvw 2dvw;
+  padding: 1.5dvw;
+}
+
+/* Nav */
+
+nav {
+  position: sticky;
+  top: 1dvw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  transition: padding 0.2s ease-out;
+}
+
+nav img {
+  width: 5em;
+  margin: 0 18px;
+
+  transition: width 0.2s ease-out;
+}
+
+nav.scrolled {
+  padding: 0.8dvw;
+}
+
+nav.scrolled > img {
+  width: 2em;
+}
+
+nav > h1 {
+  flex: 1 20%;
+  padding: 0;
+}
+
+nav > ul {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  list-style: none;
+  flex: 1 20%;
+}
+
+nav > ul > li {
+  display: flex;
+  flex-direction: row;
+  flex: 1 100%;
+  text-align: center;
+}
+
+nav > ul > li::after {
+  margin: 0 10px;
+  content: "|";
+}
+
+nav > ul > li:last-child::after {
+  content: "";
+}
+
+nav > ul > li > a {
+  width: max-content;
+}
+
+/* Article */
+
+.job {
+  margin: 20px 0;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.job > img,
+.job > section {
+  grid-row: 1;
+}
+
+.job > section {
+  padding: 0 15px;
+}
+
+.job > img {
+  display: block;
+}
+
+.job > h1,
+.job > p {
+  flex: 1 100%;
+}
+
+.job:nth-child(odd) > img {
+  grid-column: 1;
+}
+
+.job:nth-child(odd) > section {
+  grid-column: 2;
+}
+
+.job:nth-child(even) > img {
+  grid-column: 2;
+}
+
+.job:nth-child(even) > section {
+  grid-column: 1;
+}
+
+/* Main page */
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 12dvw;
+}
+
+#main table {
+  border-spacing: 0px;
+}
+
+#main table th,
+#main table td {
+  padding: 10px;
+}
+
+#main table a {
+  size: 100%;
+}
+
+#main p {
+  text-align: justify;
+  font-size: 1.2em;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+}
+
+footer > p {
+  flex: 1 60%;
+}
+
+footer > ul {
+  flex: 1 40%;
+  margin-right: auto;
+  list-style: none;
+  display: grid;
+  grid-auto-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 4px;
+  column-gap: 16px;
+}
+
+footer > ul > li > a {
+  padding: 0, 10px;
+  text-align: center;
+}
