@@ -1,4 +1,4 @@
-# Projets-Informatique-Malik
+# Projets Informatique Malik
 Ce dépôt regroupe mes réalisations majeures au sein du BUT
 
 # 📊 Analyse des résultats du Brevet (SAE 1.01)
